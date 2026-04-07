@@ -3,18 +3,34 @@ app.py — Streamlit entry point for the Personal Finance Advisor.
 Run with: uv run streamlit run app.py
 """
 
-import html
-
-import chromadb
 import ollama
 import streamlit as st
 
 from agents import AdvisorAgent, ExtractionAgent, QueryAgent
-from rag import CHROMA_DIR, COLLECTION_NAME, retrieve_multi
+from rag import get_collection_count, retrieve_multi
+
 
 def _escape_dollars(stream):
     for token in stream:
         yield token.replace("$", r"\$")
+
+
+# ---------------------------------------------------------------------------
+# Cached resources (instantiated once per session)
+# ---------------------------------------------------------------------------
+
+@st.cache_resource
+def get_extraction_agent():
+    return ExtractionAgent()
+
+@st.cache_resource
+def get_query_agent():
+    return QueryAgent()
+
+@st.cache_resource
+def get_advisor_agent():
+    return AdvisorAgent()
+
 
 # ---------------------------------------------------------------------------
 # Startup checks (run once at module load)
@@ -27,9 +43,7 @@ except Exception:
     st.stop()
 
 try:
-    _client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-    _col = _client.get_or_create_collection(name=COLLECTION_NAME)
-    if _col.count() == 0:
+    if get_collection_count() == 0:
         st.error("No documents indexed. Run: uv run python ingest.py first.")
         st.stop()
 except Exception as e:
@@ -53,36 +67,37 @@ if run_button:
     else:
         try:
             # Step 1 — Extraction
-            st.markdown("---")
-            st.markdown("#### Step 1 — Extracting your financial profile")
-            with st.spinner("Analysing your situation..."):
-                profile = ExtractionAgent().run(user_input)
-            st.success("Profile extracted.")
-            st.json(profile)
+            with st.status("Extracting your financial profile...", expanded=False) as s:
+                profile = get_extraction_agent().run(user_input)
+                s.update(label="Financial profile extracted", state="complete")
+
+            profile_rows = [(k.replace("_", " ").title(), str(v)) for k, v in profile.items() if k != "summary"]
+            st.dataframe(
+                {"Field": [r[0] for r in profile_rows], "Value": [r[1] for r in profile_rows]},
+                use_container_width=True,
+                hide_index=True,
+            )
+            if "summary" in profile:
+                st.caption(f"Summary: {profile['summary']}")
 
             # Step 2 — Query reformulation
-            st.markdown("---")
-            st.markdown("#### Step 2 — Identifying relevant topics")
-            with st.spinner("Generating retrieval queries..."):
-                queries = QueryAgent().run(profile)
-            st.success("Topics identified.")
+            with st.status("Identifying relevant topics...", expanded=False) as s:
+                queries = get_query_agent().run(profile)
+                s.update(label="Topics identified", state="complete")
+
             for i, q in enumerate(queries, 1):
                 st.write(f"{i}. {q}")
 
-            # Step 3 — RAG retrieval (silent)
-            st.markdown("---")
-            st.markdown("#### Step 3 — Retrieving relevant content")
-            with st.spinner("Searching the knowledge base..."):
+            # Step 3 — RAG retrieval
+            with st.status("Searching the knowledge base...", expanded=False) as s:
                 chunks = retrieve_multi(queries, k_per_query=3)
-            st.success(f"Retrieved {len(chunks)} relevant passages.")
+                s.update(label=f"Retrieved {len(chunks)} relevant passages", state="complete")
 
             # Step 4 — Advisor (streaming)
-            st.markdown("---")
-            st.markdown("#### Step 4 — Generating your personalised advice")
-            full_response = st.write_stream(_escape_dollars(AdvisorAgent().run(profile, chunks)))
+            st.markdown("#### Your personalised advice")
+            st.write_stream(_escape_dollars(get_advisor_agent().run(profile, chunks)))
 
             # Sources
-            st.markdown("---")
             st.markdown("#### Sources consulted")
             by_source: dict[str, list[dict]] = {}
             for chunk in chunks:
@@ -91,8 +106,7 @@ if run_button:
                 with st.expander(f"{source} ({len(source_chunks)} passage{'s' if len(source_chunks) > 1 else ''})"):
                     for i, chunk in enumerate(source_chunks, 1):
                         st.markdown(f"**Passage {i}**")
-                        escaped_text = html.escape(chunk["text"]).replace('\n', '<br>')
-                        st.markdown(f'<div style="opacity: 0.8; font-size: 0.85em; margin-bottom: 1rem; line-height: 1.5;">{escaped_text}</div>', unsafe_allow_html=True)
+                        st.caption(chunk["text"])
 
         except Exception as e:
             st.error(f"Something went wrong: {e}")

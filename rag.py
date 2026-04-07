@@ -22,6 +22,10 @@ def _get_collection():
     return _collection
 
 
+def get_collection_count() -> int:
+    return _get_collection().count()
+
+
 def retrieve_single(query: str, k: int = 3) -> list[dict]:
     """
     Embed the query and return the top-k most relevant chunks.
