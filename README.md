@@ -8,13 +8,21 @@ A local personal finance advisor that combines a three-agent pipeline with a RAG
 
 - Python 3.12+
 - [Ollama](https://ollama.com) installed and running
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) (recommended) **or** `pip`
+
+> **Windows note:** clone the repository into a short path (e.g. `C:\dev\finance-advisor`).
+> Deeply nested locations such as `OneDrive\Documents\...` can exceed the 260-character
+> path limit and break ChromaDB's local storage. Either keep the path short or enable
+> [long path support](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation).
 
 ---
 
 ## Setup
 
+### Option A — using `uv` (recommended)
+
 ```bash
-uv add ollama chromadb pdfplumber streamlit
+uv sync
 
 ollama pull qwen3.5:2b
 ollama pull qwen3.5:4b
@@ -23,16 +31,49 @@ ollama pull qwen3-embedding:0.6b
 uv run python ingest.py
 ```
 
-The last command parses all documents in `data/`, chunks them, embeds each chunk, and
-stores everything in a local ChromaDB database (`chroma_db/`). Run it once before
+### Option B — using `pip`
+
+```bash
+# 1. Create and activate a virtual environment
+python -m venv .venv
+
+# macOS / Linux
+source .venv/bin/activate
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+# Windows (cmd)
+.venv\Scripts\activate.bat
+
+# 2. Install dependencies
+pip install "chromadb>=1.5.5" "numpy>=2.4.4" "ollama>=0.6.1" "pdfplumber>=0.11.9" "streamlit>=1.56.0" "pytz>=2026.1"
+
+# 3. Pull the models
+ollama pull qwen3.5:2b
+ollama pull qwen3.5:4b
+ollama pull qwen3-embedding:0.6b
+
+# 4. Ingest the corpus
+python ingest.py
+```
+
+The ingestion command parses all documents in `data/`, chunks them, embeds each chunk,
+and stores everything in a local ChromaDB database (`chroma_db/`). Run it once before
 launching the app. Use `--force` to re-ingest.
 
 ---
 
 ## Usage
 
+With `uv`:
+
 ```bash
 uv run streamlit run app.py
+```
+
+With `pip` (virtual environment activated):
+
+```bash
+streamlit run app.py
 ```
 
 Then open the URL printed in the terminal (usually `http://localhost:8501`).
