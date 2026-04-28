@@ -1,0 +1,47 @@
+In Italy, people are not able to invest in tax-advantaged accounts. Where Italians used to be able to retire early because of the relatively low retirement age and the possibility to receive a senior's pension early on, reforms have made it more important to build up your own investments.
+
+An investor is able to buy index funds in the form of exchange-traded funds (ETFs) through a bank or broker and there are companies offering index mutual funds.
+
+Italy taxes ETFs in two ways:
+# When an ETF gives you a dividend, it is taxed 26% by the Italian government
+# When you sell an ETF the capital gain is taxed 26% by the Italian government
+It is therefore always better for an Italian who is in the saving phase to invest in an accumulating ETF as:
+* the dividends are automatically invested without being taxed at the moment and can give much more compounded earnings
+* you need to make fewer transactions as you do not need to re-invest dividends each year
+
+Since April 9, 2014 a new tax law (D.lgs 44, 4 March 2014 following EU Directive 2011/61/UE AIFM "Alternative Investment Fund Managers") simplified Italian ETF taxation. According to the new law all profits (both dividends and capital gains) are considered investment income while losses are treated as "other income". Both profits and losses are calculated by subtracting the purchase price from the sale price, regardless of the ETF's NAV, which was used before. As a consequence tax profit/loss compensation is no longer possible as profits and losses now belong to two different fiscal categories.
+
+ETFs are legally equated to OICR ("Organismi di Investimento Collettivo del Risparmi") like common funds, and have been separated in two categories: harmonized (which follow EU UCITS directives) and non-harmonized ETFs. All the ETFs quoted on the Borsa Italiana - Italy's main stock exchange - are harmonized and so are most of EU-domiciled ETFs. Foreign ETFs (including US-domiciled ETFs) are non-harmonized.
+
+All investment income (both dividends and capital gains) from harmonized ETFs is subject to a withholding tax of 26% to be applied at source directly by the broker, while income from non-harmonized ETFs should be included in the annual tax return and is taxed at progressive tax rates, which are often much higher. This is the main reason Italian investors should consider using only harmonized ETFs. Because the capital gains tax is only applied when selling, it is suggested to only use accumulating funds, as dividends are taxed when paid out, but not when reinvested.
+
+Profits deriving from direct investment in eligible bonds (i.e., Italian government bonds and government bonds issued by foreign countries allowing an adequate exchange of information with Italy) are subject to a lower (12.5%) tax rate.
+
+If a bond fund invests in both eligible and non-eligible bonds, the lower (12.5%) tax rate will be applied only to the percentage of eligible bonds in the fund while the rest will be taxed at the higher (26%) rate.
+
+Usually the list of the eligible bond funds with the corresponding percentages of eligible bonds is available on the fund manager's website.
+
+As described in the Wiki page for Nonresident alien investors and Ireland domiciled ETFs a non-US person is generally advised not to invest in US domiciled funds. For the Italian investor this is true as well, as US domiciled funds are required to distribute dividends, which is tax inefficient for the long-term investor. Besides all US domiciled funds are non-harmonized and their income should be included in the annual tax return and will be taxed at progressive tax rates, which are often much higher that the flat 26% tax rate applied to harmonized ETFs.
+
+A good alternative may be accumulating Irish domiciled UCITS ETFs, also because Ireland does not impose capital gains tax or estate tax on non-residents. You can search for and compare EU domiciled ETFs on JustETF.com.
+
+Many ETFs trade on the Milan stock exchange. If this is not the case, other exchanges in Europe can be freely used. 
+
+Like many international investors, Italian investors could consider to approximate the global equity market. As of 2016, The MSCI World Index represents large and mid-cap equity across 23 developed markets countries. It covers approximately 85% of the free float-adjusted market capitalization in each country. The MSCI Emerging Markets Index consists of 23 countries representing 10% of world market capitalization. Small Cap stocks  covers approximately 14% of the free float-adjusted market capitalization in each country.
+
+Example funds (using the following selection criteria: all-cap, low costs, good AUM, full physical replication or a high amount of stocks relative to the index when using optimized sampling, accumulating):
+
+1. UBS Core MSCI World UCITS ETF USD (WRDA), ISIN IE00BD4TXV59, Total Expense Ratio = 0.06%.
+Follows the MSCI World Index. Developed markets large cap.
+
+2. iShares Core MSCI Emerging Markets IMI UCITS ETF (EIMI), ISIN IE00BKM4GZ66, Total Expense Ratio = 0.18%. Follows the MSCI Emerging Markets IMI index (all-cap)
+
+3. iShares MSCI World Small Cap UCITS ETF (IUSN), ISIN IE00BF4RFH31, Total Expense Ratio = 0.35%. Follows the MSCI World Small Cap Index. Developed markets mid and small cap stocks
+
+4. SPDR MSCI All Country World UCITS ETF (Acc) (ACWE), ISIN IE00B44Z5B48, Total Expense Ratio = 0.12%. Follows the MSCI All Country World Index. Developed and emerging markets large and mid stocks
+
+There are many options for bond ETFs. However, to reduce interest rate risk and default risk the choice could be limited to short and intermediate-term duration bonds with high credit ratings. Typically each risk reduction also reduces the expected return.
+
+Generally is advisable to hold Euro denominated bonds to avoid currency risk, which is a big part of short term volatility with bonds.
+
+Another option is to hold a global government bond fund hedged to Euro. According to Vanguard research with currency risk hedged back to Euro, the global fixed income market can provide risk-reduction and diversification benefits.

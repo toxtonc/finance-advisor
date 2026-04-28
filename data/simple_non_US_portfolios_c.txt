@@ -1,0 +1,52 @@
+Simple non-US portfolios are designed to perform well for non-US investors in most market conditions.  Most contain a small number of low-cost funds that are easy to rebalance.  They are "lazy" because you can maintain the same asset allocation for an extended time.
+
+The US has unfavourable tax rules for US assets held by non-US investors. Because of this, and for other reasons, non-US investors will usually want asset allocations and index funds or ETFs that are different from those used by US investors who use "lazy" portfolios.
+
+The simplest portfolios use non-US domiciled index funds (where these are easily available) or Ireland domiciled ETFs to build a low-cost structure with a small number of funds, generally five or fewer, that are easy to re-balance and follow the spirit of the Bogleheads approach.
+
+The simple index portfolios illustrated here are a collection of portfolios that contain broad based representation from the major asset classes: local or regional bonds; local or regional equities; and global bonds and global equities. They use passive investing and index funds to keep costs to a minimum while accepting market returns. This helps keep these portfolios simple to manage.
+
+Depending on the level of simplicity you are looking for, you can build:
+
+* A one fund portfolio consisting of a single multi-asset fund.
+* A two fund portfolio consisting of a global bond fund and a global stock fund.
+* A three fund portfolio consisting of a global bond fund, global developed market stock fund and a global emerging market stock fund.
+* A four or five fund portfolio consisting of local or regional bond fund, global stock fund, local or regional stock fund, emerging market stock fund and small cap stock fund.
+
+These portfolios are ideal if you are in the accumulation stage, with retirement as your main goal. However, simple index portfolios also work during the withdrawal stage.
+
+When choosing a global aggregate bond fund, you can use a global fund that includes both government and corporate debt, or an ETF that holds only global government debt.
+
+When choosing your ETFs, make sure to consider your local country tax rules. These might suggest a preference for either accumulating or distributing versions of the funds.
+
+The illustrated examples use a 50/50 allocation of bonds and stocks. Your actual allocation will depend upon your risk tolerance and where you are in the investment lifecycle.
+
+These portfolios do not include cash and cash equivalents, property and other asset classes (these would be part of a more complex portfolio). You should however hold some cash for emergencies, predicted expenditure, or both.
+
+The actual percentage you would allocate to each of the funds is set by your asset allocation (AA) (how you split your portfolio into bonds and equity). 
+
+1. One fund portfolio
+Vanguard LifeStrategy funds hold stocks and bonds in a fixed allocation, and can provide you with an all-in-one single fund multi-asset portfolio. Vanguard's LifeStrategy ETF range offers a handful of discrete allocations: 20% stocks and 80% bonds; 40% stocks and 60% bonds; 60% stocks and 40% bonds; and 80% stocks and 20% bonds.
+If these static allocations do not match your asset allocation, you could pair up options to create a different allocation. For example, investing half in the 60% stocks fund and half in the 80% stocks fund produces a 70% stocks and 30% bonds allocation.
+
+2. Two fund portfolio
+Beyond Vanguard LifeStrategy funds, the simplest version of the Boglehead approach, with the minimum number of funds, wide diversity, low cost and modest risk, combines a global equity fund and a global bond fund in the split that match your chosen Asset Allocation (for example, 50/50, 60/40, or other).
+
+3. Three fund portfolio
+A very simple portfolio with the addition of a world emerging market equity fund in case the world equity fund that is available only cover the developed markets. Based on free float, the Emerging Markets are typically between 10 and 15% of the total global equity market.
+
+4. Four fund portfolio
+Some investors wish to invest more in the local equity market than is justified by the market weight of the local market. For example, a simple portfolio which introduces some home bias in stocks.
+
+5. Five fund portfolio
+This version adds small cap stocks to equities. This is useful when the equity funds do not include small caps and you wish to include them.
+
+Using the approach set out above, below are some possible fund options. Be sure that you consider any local country and domicile issues, tax, and costs. 
+
+You need to know your domicile and tax status to identify the appropriate ETF for each asset class.
+
+When choosing a particular ETF or group of ETFs, you need to be aware that different providers can use different benchmarks to track their fund performance. For example the iShares global aggregate bond (AGGH / EUNA indicated in the accumulating sample above) tracks the Bloomberg Global Aggregate Bond Index, and Vanguard tracks the same index. However, the iShares global stock ETF (IWDA / EUNL / SWDA indicated in the accumulating sample above) tracks the MSCI World index, while the Vanguard world stock ETF (VWRP / VWRA / VWCE) tracks the FTSE All-World index. 
+
+The content of these indices is different. You may want to understand the differences and choose accordingly. 
+
+It is fine to follow allocation percentages approximately. You do not need to round percentages (or cash amounts) to match the exact index allocation for the smaller sub asset classes, as the Emerging Market and small cap allocations, both of which are relatively minor. For cost reasons, it may help to group portfolio choices to one provider.

@@ -1,0 +1,69 @@
+When deciding on your stock allocation, you face a number of questions:
+
+1. What regional allocation will you use?
+* Do you want global diversification?
+* Do you overweight any regions? If yes, which ones?
+*Do you overweight your region and introduce a home country bias?
+
+2. You also need to decide if you will focus on the mainstream Boglehead practices, or if you prefer one of the variations.
+* Do you introduce a tilt?  If yes, to what?
+* Do you overweight or underweight a portion of the stock market? If yes, which one?
+
+One of the Boglehead principles is to diversify. This means that instead of trying to pick the specific stocks or parts of the market that will outperform in the future, you buy funds that are widely diversified, or which approximate the whole market.
+
+Owning the whole worldwide stock market would give you the maximum diversification. You would own large cap, mid cap and small cap stocks from developed and emerging markets, covering about 98% of the worldwide stock market.
+
+Sometimes though, you have to accept a simpler portfolio. Perhaps where owning the whole worldwide stock market requires a complex and expensive portfolio of multiple funds. Options include:
+* A focus on only large cap and mid cap stocks of the developed markets. This covers around 75-80% of the worldwide stock market.
+* A focus on large cap and mid cap stocks from developed and emerging markets. This covers about 85%-90% of the worldwide stock market, and you can achieve it with one or two funds.
+
+Home country bias means overweighting your home country or region in your asset allocation. One simple reason for this is familiarity. Another is that in some countries it may be difficult or even impossible to invest elsewhere.
+
+An article in A Wealth of Common Sense discusses how the different regions of the world differ in terms of their market structure and composition, and how home country bias can impact the diversification, performance and risks of your portfolio.
+
+Many US based Bogleheads overweight the US stock market. Both John Bogle in "Common Sense on Mutual Funds" and Taylor Larimore in "The Bogleheads Guide to the Three-Fund Portfolio" argue for overweighting US stocks in a US investor's asset allocation policy by limiting non-US stocks to a maximum 20% of the total equity allocation. 
+
+This might also be a strategy for you, but only if you agree with their reasoning.
+
+Global diversification is a type of geographical diversification that consists of adding foreign asset classes, such as stocks and bonds, to a domestic portfolio. The goal of global diversification can be to increase the expected return, decrease the risk, or both, although whether such goals will be achieved cannot be known in advance. This page explores the pros and cons of global diversification for fixed income and equities, from a Canadian perspective, but first explains the "home country bias" phenomenon.
+
+Forum member Siamond posted an "Investing in the World" series on the Bogleheads blog which poses the question:
+"Could one simply invest in the world, using global stocks and global bonds? And if this proves unsatisfying, is there a proper middle ground between domestic and global allocations?"
+
+Part 1 studies a fairly extreme position of investing 100% in the world (global stocks and global bonds). 
+The outcome proved surprisingly diverse, due to very distinct (and hard to predict without hindsight) patterns in inflation and exchange rates in the various countries being investigated. The author concluded by the desire to look at more balanced asset allocations, involving domestic equities as well as global equities.
+
+Part 2 explores the opposite position of exclusively investing with domestic assets. The article focuses on the historical returns from 16 developed countries, looking from the perspective of a local investor, and assuming a strong home country bias to begin with (that is, solely using domestic stocks and domestic bonds). 
+The study concludes that a fully domestic investment can deliver fairly good results, as anybody having invested in the US or Canada knows. It can even deliver very impressive results as Swedish citizens experienced in the past decades. But it can also put local investors in devastating situations, with decades-long drawdowns for both stocks and bonds (in real terms), and ruin even the most conservative retirement plans, as Spain, Italy and Japan investors went through.
+
+Part 3 seeks a middle ground and looks at more diversified portfolios mixing domestic and global investments in the various countries of the study. It looks at the mitigation mixing domestic and global can bring to the countries having fared the worst, but also consequences for countries having fared better.
+Generally speaking, a broad exposure to global stocks (while still keeping a tilt towards the domestic market and without introducing any such globalization on the bonds side) seemed a fairly solid approach, reducing the risk of large underperformance by being in a ‘loser’ country.  
+The author believes that this study makes a convincing case to seek a fairly high exposure to global (or international) equities, while keeping a significant tilt towards domestic equities.
+
+Vanguard has several studies related to strategic asset allocation and home bias.
+
+In "The global case for strategic asset allocation and an examination of home bias", the study concludes:
+We found that market-cap-weighted indexed policy portfolios provided higher returns than the average actively managed fund. Furthermore, we suggest that global market-cap-weighted index funds are a good starting point for all investors.
+
+Portfolio construction begins with investors choosing an asset allocation policy. Then, investors can choose how the policy will be implemented.
+
+We also note that the average investor takes on a home-country portfolio bias. This may occur for many reasons, but perhaps three are the most prominent – inertia, return opportunity and risk control.
+
+In "The role of home bias in global asset allocation decisions", the paper asks the question: 
+"In a world in which a portfolio’s diversification benefits from broad allocations to global securities, how much home bias is reasonable?"
+
+Diversification is a common objective for global investors. But even though there is general agreement on the importance of exposure to a variety of asset classes (dependent, of course, on investor-specific factors), there is less agreement on the role of foreign securities in a domestic portfolio. Investors display a persistent and significant home bias, regardless of domicile, which often conflicts with the tenets of broad global diversification. It is interesting that this bias is often conscious and intentional, with investors actively overweighting domestic holdings at the expense of foreign securities.
+
+In "Global equity investing: The benefits of diversification and sizing your allocation", the study concludes:
+Regardless of where they live, investors have a significant opportunity to diversify their equity portfolios by investing outside their home market. Despite this opportunity, investors on average have maintained allocations to their home country that have been significantly larger than the country’s market-capitalization weight in a globally diversified equity index.
+
+In each market we examined, our analysis indicated that volatility was reduced most with an allocation to international equities of between 40% and 50%. While this observation may help investors determine the appropriate mix of domestic and international equities, volatility reduction is not the only factor to consider.
+
+This paper concludes that although no one answer fits all investors, global market-capitalization weight serves as a helpful starting point in determining the appropriate allocation between domestic and international equities. In practice, many investors will consider an allocation to international equities well below global market-capitalization weight based on their sensitivity to a number of considerations, including volatility reduction, implementation costs, taxes, regulation, and their own preferences.
+
+Along with the mainstream Boglehead stock allocation you can find some variations on Bogleheads investing discussed on the forum.
+* Adding and overweighting of REITs. US-based portfolios that provide allocations to REITs include David Swensen's Lazy Portfolio and Rick Ferri's Core Four Portfolio.
+* Adding more asset classes to a portfolio. For example gold, commodities, and various sub-asset classes of bonds. The most discussed portfolios using gold in portfolio construction include the Harry Browne Permanent Portfolio and the Golden Butterfly Portfolio.
+* Tilt to value and small cap. One much discussed portfolio that tilts to value and small cap stocks is Bill Schultheis's "Coffeehouse" Portfolio.
+* Slicing and dicing the market and overweighting some of the slices. Slice and dice portfolios include William Bernstein's "Coward's" portfolio and Frank Armstrong's "Ideal Index" portfolio.
+Several studies investigate the benefits and drawbacks of these variations for US investors. It is not clear whether their conclusions would apply to non-US investors.

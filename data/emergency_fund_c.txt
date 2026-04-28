@@ -1,0 +1,74 @@
+An emergency fund is a reserve of liquid assets to cover unanticipated needs for cash such as medical bills, car or home repair, or job loss. It is usually specified as a multiple of monthly expenses, for example, three months to one year's worth of expenses.
+
+An emergency fund aims to give you a cushion of liquidity to cover unexpected expenses or becoming unemployed and losing your regular income. Keep your emergency funds in a highly liquid, low risk vehicle; for example, a money market fund or a bank savings account. In this paper, the authors define emergency funds as "financial holdings which are available to cover spending in the event of an emergency (income disruption) without drastically adjusting the household’s current level of living."
+
+Building an emergency fund is at or near the top of investment priorities. Ideally you build your emergency fund at the same time as taking any employer and paying down high-interest-rate debt (such as credit card debt). Investing for longer range goals, such as retirement, college expenses or a home down payment, comes later. 
+
+Keep your emergency funds in a highly liquid, easy to access, low risk vehicle with guarantee on the capital. Examples include:
+* Checking account
+* Money market fund
+* (High yield) (insured) savings account
+* Reward checking account (RCA), which offers somewhat higher return, if you are willing to put in the effort to set one up.
+
+It might be useful to keep some real cash available for any emergencies where you do not have access to bank accounts.
+
+By far the most common emergency that would require you to use your emergency fund is the loss of a job. Because you will not need all the funds at once in this case, you might have multiple tiers of emergency fund so that you can place funds not needed for several months in short-term bonds (including CDs) to earn higher yield.
+
+Those investment products include very short-term treasury bills, as well as CDs, which often have an option allowing you to cash them in at any time for a small penalty. You can cash in I bonds at no cost after a period, so these can also form a part of a second tier of emergency fund.
+
+For instance, a multi-tiered emergency fund could consist of:
+* Three months of expenses in cash (bank account or money market fund)
+* The next three months of expenses in CDs with the option to cash them in for three months of interest
+* The next three months of expenses in a short-term Treasury bond fund. Selling these would risk incurring some loss of principal due to interest rate changes, but because the odds of needing to rely on your emergency fund for more than six months are slim, you might consider this an acceptable compromise.
+
+Johnson & Widdows define three levels of potential emergency fund assets:
+# Quick — assets held in savings, checking and money market accounts.
+# Intermediate — quick assets plus CDs and savings certificates.
+# Comprehensive — intermediate assets plus the value of stocks and bonds.
+
+The most common emergency is job loss. In the United States, many workers who are laid off are eligible for unemployment insurance payments. Eligibility and the size of the benefit vary by state. An important part of your planning should be to find out the rules in your state, and try to determine if you would be eligible, and what the size of the benefit would be.
+
+As a rough guide, unemployment benefit could be about 50% of salary, up to a maximum of about $500 per week, for a maximum of six months. This implies that for many people, unemployment insurance could serve as part as an "emergency fund," with a value of over $10,000.
+
+
+Some people view various forms of credit, particularly a Home equity line of credit (HELOC), as suitable for emergency funds; others strongly disagree. You can often withdraw credit lines with little or no notice, and some emergencies which require you to draw on the emergency fund may also cause a creditor to question your ability to repay.
+
+Using margin borrowing as an emergency fund may seem like a prudent approach to keeping money in the market and reacting to emergencies, but there are real risks in doing so.
+
+* Your emergency fund must be reliable in the worst conditions. Brokers often tighten or eliminate margin lending during difficult periods, making it unreliable.
+* Unless you are very conservative in your use of margin for an emergency fund, you run the risk of margin calls if the value of your collateral drops.
+* Interest rates can spike during stressful periods in the market, making margin expensive.
+
+Scenarios where margin-as-emergency-fund can make sense are:
+
+* You have a very stable job
+* You borrow only a tiny fraction of the available margin
+* You have a low margin interest rate
+* You treat it as a temporary bridge (for example, until a CD comes due)
+
+In some situations, you can use a Roth IRA as an emergency fund. You can withdraw contributions (that is, the money that you put into your Roth) at any time, and without taxes and penalties. This is not true of earnings on your contributions, which are subject to more complex rules.
+
+You can also withdraw penalty-free (but not tax-free) from a traditional IRA for certain excepted emergencies and major life events.
+
+A Roth IRA is designed for retirement, not to store emergency funds. You should consider the effect using it as an emergency fund might have on your portfolio asset allocations, and also any custodial costs. There are also behavioral considerations.
+
+If you need to make a choice between funding a Roth IRA and an emergency fund, you can use a Roth IRA as an emergency fund, but only in the appropriate situation.
+
+Also, remember that funds in investment accounts (Roth IRA) are not immediately available. Check with the fund provider, as you may need several days to complete the fund transfer process.
+
+You can use a Health Savings Account (HSA) to pay for unexpected medical expenses tax-free, as long as they are qualified. Normally, non-medical (and unqualified medical) distributions from an HSA would be taxed as income and assessed an additional 20% penalty.
+
+However, if medical expenses are qualified, incurred since the establishment of the HSA, paid out of pocket, and appropriately documented, they can be reimbursed in a future year. So you can keep a running tally of reimbursable expenses, allowing tax-free withdrawals along the same lines as Roth IRA contributions. A distribution from an HSA in the current year can be used to pay or reimburse expenses incurred in any prior year as long as the expenses were incurred after the HSA was established.
+
+Notice however that this strategy puts the shorter-term need for liquid, low-risk emergency funds in opposition to the longer-term tax savings of appreciated assets in the HSA. If you consider only part of the HSA to be emergency fund, the two parts (emergency fund and long-term growth) of the HSA should have different asset allocations, and you should track them carefully.
+
+As with using Roth IRA contributions for emergencies, any withdrawals would permanently reduce your tax-advantaged 'space'. For that reason, and because HSA funds might not be available as quickly as bank accounts, you should probably consider HSA funds a 'later tier' of the total emergency fund. 
+
+If you are applying for financial aid for college or grad school, the FAFSA® (Free Application for Federal Student Aid) form excludes HSAs from income.
+The balance in the account does not count as an asset, nor would distributions from it count as untaxed income when you use them for qualified medical expenses. Distributions not used for qualified expenses are subject to income tax (and a possible penalty) and will count as adjusted gross income.
+
+You can use your taxable portfolio as your emergency fund, for example by keeping a dedicated reserve in a money market fund in a brokerage account. Alternatively, instead of a money market account, you could invest according to your preferred asset allocation, with the understanding that you would sell brokerage assets on short notice in an emergency.
+
+In either case, allowing for fund settlement you could transfer cash to a checking account typically in a day or two.
+
+Money market funds have the convenience, low risk, competitive short-term yields, and liquidity needed for an emergency fund. Equities or other investments may match your desired asset allocation better, and may provide enough liquidity, but they carry more risk. Consider the increased risk carefully before using your taxable portfolio as an emergency fund in this way.

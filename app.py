@@ -7,7 +7,7 @@ import ollama
 import streamlit as st
 
 from agents import AdvisorAgent, ExtractionAgent, QueryAgent
-from rag import get_collection_count, retrieve_multi
+from rag import get_collection_count, merge_dedupe, retrieve_per_query
 
 
 def _escape_dollars(stream):
@@ -57,9 +57,27 @@ except Exception as e:
 st.title("Personal Finance Advisor")
 st.caption("Powered by Qwen Family")
 
+st.info(
+    "**Before you start:** describe your current financial situation as clearly as possible. "
+    "For the best results, try to mention each of the following points — they are the same fields "
+    "the system extracts to build your profile:\n\n"
+    "- **Monthly income** (e.g. \"I earn 2,000 $ per month\")\n"
+    "- **Monthly expenses** (e.g. \"my expenses are around 1,200 $\")\n"
+    "- **Savings** (e.g. \"I have 5,000 $ set aside\")\n"
+    "- **Debts** (e.g. \"I have a 1,000 $ credit card debt\" or \"no debts\")\n"
+    "- **Goals** (e.g. \"I want to buy a house\" or \"build an emergency fund\")\n"
+    "- **Risk tolerance** (low, medium, or high)\n"
+    "- **Time horizon** (e.g. \"in 3 years\")\n\n"
+    "**Note:** if you want to consult the sources used by the advisor, tick the "
+    "*Show sources* box **before** clicking **Get Advice** — toggling it afterwards "
+    "will reset the results."
+)
+
 with st.form("advice_form"):
     user_input = st.text_area("Describe your financial situation:", height=150)
     run_button = st.form_submit_button("Get Advice")
+
+show_sources = st.checkbox("Show sources", value=False)
 
 if run_button:
     if not user_input.strip():
@@ -67,46 +85,48 @@ if run_button:
     else:
         try:
             # Step 1 — Extraction
-            with st.status("Extracting your financial profile...", expanded=False) as s:
+            with st.spinner("Extracting your financial profile..."):
                 profile = get_extraction_agent().run(user_input)
-                s.update(label="Financial profile extracted", state="complete")
+            st.success("Financial profile extracted")
 
             profile_rows = [(k.replace("_", " ").title(), str(v)) for k, v in profile.items() if k != "summary"]
             st.dataframe(
                 {"Field": [r[0] for r in profile_rows], "Value": [r[1] for r in profile_rows]},
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
-            if "summary" in profile:
-                st.caption(f"Summary: {profile['summary']}")
-
             # Step 2 — Query reformulation
-            with st.status("Identifying relevant topics...", expanded=False) as s:
+            with st.spinner("Identifying relevant topics..."):
                 queries = get_query_agent().run(profile)
-                s.update(label="Topics identified", state="complete")
+            st.success("Topics identified")
 
             for i, q in enumerate(queries, 1):
-                st.write(f"{i}. {q}")
+                q_display = q[:1].upper() + q[1:] if q else q
+                st.text(f"{i}. {q_display}")
 
             # Step 3 — RAG retrieval
-            with st.status("Searching the knowledge base...", expanded=False) as s:
-                chunks = retrieve_multi(queries, k_per_query=3)
-                s.update(label=f"Retrieved {len(chunks)} relevant passages", state="complete")
+            with st.spinner("Searching the knowledge base..."):
+                per_query_chunks = retrieve_per_query(queries, k_per_query=3)
+                chunks = merge_dedupe(per_query_chunks)
+            st.success(f"Retrieved {len(chunks)} relevant passages")
 
             # Step 4 — Advisor (streaming)
             st.markdown("#### Your personalised advice")
             st.write_stream(_escape_dollars(get_advisor_agent().run(profile, chunks)))
 
-            # Sources
-            st.markdown("#### Sources consulted")
-            by_source: dict[str, list[dict]] = {}
-            for chunk in chunks:
-                by_source.setdefault(chunk["source"], []).append(chunk)
-            for source, source_chunks in sorted(by_source.items()):
-                with st.expander(f"{source} ({len(source_chunks)} passage{'s' if len(source_chunks) > 1 else ''})"):
-                    for i, chunk in enumerate(source_chunks, 1):
-                        st.markdown(f"**Passage {i}**")
-                        st.caption(chunk["text"])
+            # Sources (per-query, with similarity distances)
+            if show_sources:
+                st.markdown("#### Sources")
+                for i, (q, q_chunks) in enumerate(zip(queries, per_query_chunks), 1):
+                    q_display = q[:1].upper() + q[1:] if q else q
+                    safe_label = q_display.replace("`", "").replace("$", "")
+                    with st.expander(f"Query {i}: {safe_label}"):
+                        for j, chunk in enumerate(q_chunks, 1):
+                            st.markdown(
+                                f"**Hit {j}** — `{chunk['source']}` "
+                                f"(distance = `{chunk['distance']:.3f}`)"
+                            )
+                            st.text(chunk["text"])
 
         except Exception as e:
             st.error(f"Something went wrong: {e}")

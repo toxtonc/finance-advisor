@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Context
 
-This is a university demo project (Laboratorio di Data Science). Keep changes focused and avoid over-engineering — simplicity and clarity are preferred over robustness or scalability.
+This is a university demo project. Keep changes focused and avoid over-engineering — simplicity and clarity are preferred over robustness or scalability.
 
 ## Commands
 
@@ -41,12 +41,12 @@ The system is a 4-step pipeline triggered on each user submission:
 
 All agents use `think=False` to suppress chain-of-thought reasoning in the Qwen3 models.
 
-**Ingestion** (`ingest.py`): reads `.pdf` and `.txt` files from `data/`, extracts text (pdfplumber for PDFs, filtering lines < 40 chars as headers/footers), chunks with 800-char windows / 160-char overlap at sentence boundaries, embeds with `qwen3-embedding:0.6b`, stores in ChromaDB collection `finance_docs` at `chroma_db/`.
+**Ingestion** (`ingest.py`): reads `.pdf` and `.txt` files from `data/`, extracts text (pdfplumber for PDFs, filtering lines < 40 chars as headers/footers), chunks, embeds with `qwen3-embedding:0.6b`, stores in ChromaDB collection `finance_docs` at `chroma_db/`.
 
 **App startup** (`app.py`): checks Ollama is reachable and ChromaDB collection is non-empty before rendering the UI; calls `st.stop()` on failure.
 
 ## Key details
 
-- The `$` symbol is explicitly avoided in AdvisorAgent output (causes Streamlit LaTeX rendering issues); `app.py` also escapes any `$` tokens from the stream with `_escape_dollars()`.
+- The `$` symbol is explicitly avoided in outputs (causes Streamlit LaTeX rendering issues); `app.py` also escapes any `$` tokens from the stream with `_escape_dollars()`.
 - Chunk IDs are `{filename}_{chunk_index}` — used for deduplication in `retrieve_multi`.
 - Models are instantiated fresh per request (no state held between submissions).

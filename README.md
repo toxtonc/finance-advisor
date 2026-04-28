@@ -41,16 +41,16 @@ Then open the URL printed in the terminal (usually `http://localhost:8501`).
 
 To obtain the best personalised response from the Agents, you should mention the following key points in your description, as the system extracts these specific fields to build your profile:
 
-* **Monthly Income**: Provide your regular income (e.g., "I earn €2000 (net or gross) a month").
-* **Monthly Expenses**: Estimate your fixed and variable expenses (e.g., "My expenses are around €1200 a month").
-* **Savings**: State your current savings (e.g., "I have €5000 in savings").
-* **Debts**: Mention any outstanding loans or debts (e.g., "I have a €1000 credit card debt").
+* **Monthly Income**: Provide your regular income (e.g., "I earn 2000 (net or gross) a month").
+* **Monthly Expenses**: Estimate your fixed and variable expenses (e.g., "My expenses are around 1200 a month").
+* **Savings**: State your current savings (e.g., "I have 5000 in savings").
+* **Debts**: Mention any outstanding loans or debts (e.g., "I have a 1000 credit card debt").
 * **Goals**: Specify your main financial objective (e.g., "I want to buy a car") or (e.g., "I want to provide a good education to my children with a famous university").
 * **Risk Tolerance**: Express how much risk you can handle ("low", "medium", or "high").
 * **Time Horizon**: Give a timeframe for your goal (e.g., "in 3 years").
 
 *Example:*
-> "I earn €2000 net a month and my expenses are around €1200. I have €5000 in savings and a €1000 credit card debt. My goal is to buy a car in 3 years and my risk tolerance is low."
+> "I earn 2000 net a month and my expenses are around 1200. I have 5000 in savings and a 1000 credit card debt. My goal is to buy a car in 3 years and my risk tolerance is low."
 
 ---
 
