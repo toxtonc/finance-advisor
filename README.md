@@ -82,16 +82,16 @@ Then open the URL printed in the terminal (usually `http://localhost:8501`).
 
 To obtain the best personalised response from the Agents, you should mention the following key points in your description, as the system extracts these specific fields to build your profile:
 
-* **Monthly Income**: Provide your regular income (e.g., "I earn 2000 (net or gross) a month").
-* **Monthly Expenses**: Estimate your fixed and variable expenses (e.g., "My expenses are around 1200 a month").
-* **Savings**: State your current savings (e.g., "I have 5000 in savings").
-* **Debts**: Mention any outstanding loans or debts (e.g., "I have a 1000 credit card debt").
-* **Goals**: Specify your main financial objective (e.g., "I want to buy a car") or (e.g., "I want to provide a good education to my children with a famous university").
+* **Monthly Income**: Provide your regular income (e.g., "I earn 2000$ (net or gross) a month").
+* **Monthly Expenses**: Estimate your fixed and variable expenses (e.g., "My expenses are around 1200$ a month").
+* **Savings**: State your current savings (e.g., "I have 5000$ in savings").
+* **Debts**: Mention any outstanding loans or debts (e.g., "I have a 1000$ credit card debt").
+* **Goals**: Specify your main financial objective (e.g., "I want to buy a car").
 * **Risk Tolerance**: Express how much risk you can handle ("low", "medium", or "high").
 * **Time Horizon**: Give a timeframe for your goal (e.g., "in 3 years").
 
 *Example:*
-> "I earn 2000 net a month and my expenses are around 1200. I have 5000 in savings and a 1000 credit card debt. My goal is to buy a car in 3 years and my risk tolerance is low."
+> "I earn 2000$ net a month and my expenses are around 1200$. I have 5000$ in savings and a 1000$ credit card debt. My goal is to buy a car in 3 years and my risk tolerance is low."
 
 ---
 
@@ -100,16 +100,16 @@ To obtain the best personalised response from the Agents, you should mention the
 ```
 User input (natural language)
         ↓
-[ExtractionAgent — qwen3.5:2b]
+[ExtractionAgent]
   structured JSON profile
         ↓
-[QueryAgent — qwen3.5:2b]
+[QueryAgent]
   3 targeted retrieval queries
         ↓
 [RAG retrieval — qwen3-embedding:0.6b + ChromaDB]
   top-3 chunks per query → merge → deduplicate
         ↓
-[AdvisorAgent — qwen3.5:4b, streaming]
+[AdvisorAgent]
   personalised advice rendered token by token
 ```
 
@@ -134,15 +134,14 @@ an ascending capability ladder:
 - **AdvisorAgent** — Advisory generation requires synthesis and reasoning: integrate the retrieved
   context, ground all claims in sources, and produce coherent, structured advice.
 
-### Why query reformulation improves RAG retrieval
+### Query reformulation scopes
 
-A raw user message ("I earn 1500 EUR a month and want to buy a house in 5 years") is
-optimised for human communication, not vector similarity search. The `QueryAgent`
-decomposes the profile into 3 targeted, concept-level queries that each address a
+The `QueryAgent` decomposes the profile into 3 targeted, concept-level queries that each address a
 distinct financial dimension. This increases the semantic diversity of the retrieval
-and ensures the advisor receives context covering debt management, savings strategies,
-and investment horizons — rather than only chunks superficially similar to the original
-free-text input.
+and ensures the advisor receives context covering:
+1. Debt management
+2. Savings strategies
+3. Investment horizons
 
 ---
 
@@ -160,7 +159,7 @@ finance-advisor/
 └── uv.lock        # project dependencies lock file
 ```
 
-This project was developed with the support of [Claude Code](https://claude.com/claude-code).
+This project was developed with the support of [Claude Code](https://claude.com/claude-code) and [Google Antigravity](https://antigravity.google).
 
 ---
 
