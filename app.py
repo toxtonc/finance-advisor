@@ -124,7 +124,7 @@ if run_button:
             st.markdown("#### Your personalised advice")
             st.write_stream(_escape_dollars(get_advisor_agent().run(profile, chunks)))
 
-            # Sources (per-query, with similarity distances)
+            # Sources (per-query)
             if show_sources:
                 st.markdown("#### Sources")
                 for i, (q, q_chunks) in enumerate(zip(queries, per_query_chunks), 1):
@@ -132,10 +132,7 @@ if run_button:
                     safe_label = q_display.replace("`", "").replace("$", "")
                     with st.expander(f"Query {i}: {safe_label}"):
                         for j, chunk in enumerate(q_chunks, 1):
-                            st.markdown(
-                                f"**Hit {j}** — `{chunk['source']}` "
-                                f"(distance = `{chunk['distance']:.3f}`)"
-                            )
+                            st.markdown(f"**Hit {j}** — `{chunk['source']}`")
                             st.text(chunk["text"])
 
         except Exception as e:
